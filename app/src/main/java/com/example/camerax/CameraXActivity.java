@@ -90,8 +90,8 @@ public class CameraXActivity extends AppCompatActivity {
         findViewById(R.id.capture_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                File file = new File(Environment.getExternalStorageDirectory() + "/" + System.currentTimeMillis() + ".jpg");
-                imgCap.takePicture(file, new ImageCapture.OnImageSavedListener() {
+                File photo = new File("/sdcard"+ "/" + System.currentTimeMillis() + ".jpg");
+                imgCap.takePicture(photo, new ImageCapture.OnImageSavedListener() {
                     @Override
                     public void onImageSaved(@NonNull File file) {
                         String msg = "Photo capture succeeded: " + file.getAbsolutePath();

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_camera2).setOnClickListener(this);
         findViewById(R.id.btn_cameraX).setOnClickListener(this);
-
+        findViewById(R.id.btn_camera2_basic).setOnClickListener(this);
     }
 
     @Override
